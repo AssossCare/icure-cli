@@ -219,7 +219,7 @@ vorpal
 			all: [hcp.id]
 		}
 		if (args.delegationTypeForParent === 'all') {
-			delegations.all.push(args.parentId)
+			delegations.all.push(hcp.parentId)
 		}
 		let user = await api.usericc.createUser({
 			healthcarePartyId: hcp.id,
